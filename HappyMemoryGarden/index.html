@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Happy Memory Garden</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/addons/p5.sound.min.js" crossorigin="anonymous"></script>
+    <script src="sketch.js" type="text/javascript"></script>
+    <style>
+      html, body { margin: 0; overflow: hidden; background: #dfe9e6; }
+
+      canvas {
+        display: block; position: fixed; left: 50%; top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      #panel {
+        position: fixed; left: 0; right: 0; bottom: 0;
+        box-sizing: border-box;
+        display: flex; flex-direction: column; gap: 8px;
+        padding: 14px 24px 16px;
+        background: rgba(247, 248, 243, 0.97);
+        border-top: 1.5px solid #1d2a28; color: #1d2a28;
+        font: 14px/1.4 Georgia, "Times New Roman", serif;
+      }
+      #panel textarea {
+        width: 100%; box-sizing: border-box; resize: none; height: 4.2em;
+        font: 18px/1.5 Georgia, "Times New Roman", serif; color: #1d2a28;
+        background: transparent; border: 1.5px dashed #b9c2b2; border-radius: 8px; padding: 6px 10px; outline: none;
+      }
+      #panel textarea:focus { border-style: solid; border-color: #3d6a4c; }
+      #panel .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+      #panel button {
+        font: 600 12px ui-monospace, Menlo, monospace; cursor: pointer; border-radius: 999px;
+        border: 1.5px solid #1d2a28; background: #1d2a28; color: #f7f8f3; padding: 7px 14px;
+      }
+      #panel button.ghost { background: transparent; color: #1d2a28; border-color: #b9c2b2; }
+      #panel button:hover { border-color: #3d6a4c; }
+      #panel .status { font: 12px ui-monospace, Menlo, monospace; color: #5a6762; }
+    </style>
+  </head>
+  <body></body>
+</html>
